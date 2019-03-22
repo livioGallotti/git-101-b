@@ -15,3 +15,11 @@ def approximate_size(size):
         if size < multiple:
             return f'{size} {suffix}'
     raise ValueError('number too large')
+
+    if __name__ == '__main__':
+        print(approximate_size(1000))
+        print(approximate_size(100))
+        print(approximate_size(999000))
+        print(approximate_size(1000))
+        print(approximate_size())
+
